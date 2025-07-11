@@ -1,9 +1,11 @@
 import express, { json } from "express";
 import mongoose from "mongoose";
 import User from "./models/User.model.js";
+import cors from 'cors'
 
 const app = express();
 app.use(json())
+app.use(cors())
 
 const uri =
   "mongodb+srv://webdeveloper05ats:S0JPIa3qojZl5Ofo@cluster0.qwgdii2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
